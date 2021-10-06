@@ -1,17 +1,22 @@
-# Evaluating AI models in health
+# Assessing AI/ML models for health - starter kit
 ![health-bow-01](https://user-images.githubusercontent.com/53757856/134309621-0fa65f0a-2310-4f22-aa03-4b0298f12cd6.png)
 
 The [ITU/WHO Focus Group on Artificial Intelligence for Health](https://itu.int/go/fgai4h/) (FG-AI4H) was established in 2018 by ITU-T Study Group 16, and works in partnership with the World Health Organization (WHO) in order to establish a standardized framework for the assessment of AI/ML models for health.
 
-This repository contains an exemplary configuration that you can use as starter kit to base your benchmark on. Benchmarking is offered on [our platform](https://health.aiaudit.org) in two different versions of submissions: (a) The text-based version allows the participant to submit the predictions/output of the AI model to the platform, where they are compared with the ground truth in order to assess the model performance. Submissions can be made via user interface (UI) or command-line interface (CLI) as upload of (or link to) the file. (b) In the docker-based version, the participant submits the AI/ML model to a docker image via CLI, and the model performance is evaluated in a protected environment with the test dataset. An additional questionnaire can be submitted with the UI of the platform, and reviewed by an audit team.
+This repository contains an exemplary configuration that you can use as starter kit to base your benchmark on. Benchmarking is offered on [our platform](https://health.aiaudit.org) in two different versions of submissions: 
+* The text-based version allows the participant to submit the predictions/output of the AI model via user interface (UI) or command-line interface (CLI) to the platform, where they are compared with the ground truth in order to assess the model performance.
+* The docker-based version enables the participant to submit the AI/ML model via CLI in a docker image to the platform, where the model performance is evaluated in a protected environment with the test dataset. An additional questionnaire can be submitted with the UI of the platform, and reviewed by an audit team.
+
 
 ## How to create a benchmark?
 
 You find a simple configuration as starter kit in this repository that you can replicate to create a benchmark (a.k.a. challenge) on [our platform](https://health.aiaudit.org) in order to assess different ML/AI models. The repository is based on code from (but we are not affiliated to) [EvalAI](https://github.com/cloud-cv/evalai). Follow the instructions given below to get started. 
 
+
 ## Example text-based benchmark
 
 The folder retino-public-example contains a fully configured text-based benchmark configuration that we are already hosting on our platform. You can use this example to base your own benchmark on (but for data protection, we have removed our annotation and submission files).
+
 
 ## Directory Structure
 
@@ -45,6 +50,7 @@ The folder retino-public-example contains a fully configured text-based benchmar
 │   └── run.py                                # Contains the code to run the evaluation locally
 ```
 
+
 ## Configure the benchmark
 
 1. Fork this repository (e.g. by clicking on the green button with "Use this template" above).
@@ -52,6 +58,7 @@ The folder retino-public-example contains a fully configured text-based benchmar
 3. Run the command `./run.sh` to generate the `challenge_config.zip`, when you have completed your changes.
 4. Upload the `challenge_config.zip` on [our platform](https://health.aiaudit.org) to create a benchmark (as mentioned, our platform is not affiliated to EvalAI). The benchmark will be available publicly once our admin approves it.
 5. Update the details of your benchmark using the UI on [our platform](https://health.aiaudit.org).
+
 
 ## Test your evaluation script locally
 
