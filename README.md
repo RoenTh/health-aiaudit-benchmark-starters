@@ -6,7 +6,7 @@ The [ITU/WHO Focus Group on Artificial Intelligence for Health](https://itu.int/
 
 ## Configure the benchmark
 
-1. Create a repository from this template as explained [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), which is similar to forking this repository. You can simply click on the green button above with "Use this template".
+1. Create a repository from this template as explained [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), which is similar to forking this repository. You can simply click on the green "Use this template" button above (that appears when you login to GitHub).
 2. Read the [EvalAI configuration documentation](https://evalai.readthedocs.io/en/latest/configuration.html) to learn more about how you want to structure your benchmark a.k.a. challenge (note that our platform is not affiliated to EvalAI). Once you are ready, start making changes in the yaml file, HTML templates, and evaluation script according to your needs.
 3. Run the command `./run.sh` to generate the `challenge_config.zip`, when you have completed your changes.
 4. Upload the `challenge_config.zip` on [our platform](https://health.aiaudit.org) to create a benchmark (as mentioned, our platform is not affiliated to EvalAI). The benchmark will be available publicly once our admin approves it.
